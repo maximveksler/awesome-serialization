@@ -4,7 +4,7 @@
 
 ## Contents
 
-- [Data Serialization](#data-serialization)
+- [API Data Serialization](#api-data-serialization)
 - [Big Data Serialization](#big-data-serialization)
 - [Graph Serialization](#graph-serialization)
 - [Object serialization](#object-serialization)
