@@ -15,29 +15,32 @@
 
 Serilization suitible for RPC networked services.
 
-- [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) - Comma Separated Values.
-- [JSON](https://www.json.org) - Lightweight data-interchange format.
-- [Avro](https://avro.apache.org) - Scheme embedded, dynamic rich data structures.
-- [Thrift](http://thrift.apache.org) - Scalable code generation, schema evolution binary format.
-- [Protobuf](https://github.com/protocolbuffers/protobuf) - Google's data interchange format.
-- [msgpack](https://msgpack.org) - Efficient JSON-like binary serialization format.
-- [bson](http://bsonspec.org) - Binary schemeless JSON encoding.
-- [XML](https://www.w3.org/XML/) - Extensible Markup Language. Genuinely Horrible.
+- [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) - Comma Separated Values. Textual.
+- [JSON](https://www.json.org) - Lightweight data-interchange format. Textual.
+- [Avro](https://avro.apache.org) - Scheme embedded, dynamic rich data structures. Textual/Binary.
+- [Thrift](http://thrift.apache.org) - Scalable code generation, schema evolution binary format. Binary.
+- [Protobuf](https://github.com/protocolbuffers/protobuf) - Google's data interchange format. Binary.
+- [msgpack](https://msgpack.org) - Efficient JSON-like binary serialization format. Binary.
+- [bson](http://bsonspec.org) - Binary schemeless JSON encoding. Binary.
+- [XML](https://www.w3.org/XML/) - Extensible Markup Language. Genuinely Horrible. Textual.
+- [Plist](https://en.wikipedia.org/wiki/Property_list) - Property List representation. Apple. Textual.
+- [YAML](https://yaml.org) - Identation based data serialization standard. Textual.
 
 ## Big Data Serialization
 
-- [parquest](https://parquet.apache.org) - Columnar storage for Hadoop workloads.
-- [FlatBuffers](https://google.github.io/flatbuffers/) - Protocol Buffers suitible for larger datasets.
-- [orc](https://orc.apache.org) - Columnar storage for Hadoop workloads.
+- [parquest](https://parquet.apache.org) - Columnar storage for Hadoop workloads. Binary.
+- [FlatBuffers](https://google.github.io/flatbuffers/) - Protocol Buffers suitible for larger datasets. Binary.
+- [orc](https://orc.apache.org) - Columnar storage for Hadoop workloads. Binary.
 
 ## Graph Serialization
 
-- [json-ld](https://json-ld.org) - JSON for Linking Data.
-- [Turtle](https://www.w3.org/TR/turtle/) - Terse RDF Triple Language.
+- [json-ld](https://json-ld.org) - JSON for Linking Data. Textual.
+- [Turtle](https://www.w3.org/TR/turtle/) - Terse RDF Triple Language. Textual.
 
 ## Object Serialization
 
-- [pickle](https://docs.python.org/3/library/pickle.html) - Ram to Disk serialization. Python specific.
+- [pickle](https://docs.python.org/3/library/pickle.html) - Ram to Disk serialization. Python specific. Binary.
+- [Java Object Serialization](https://docs.oracle.com/javase/8/docs/technotes/guides/serialization/index.html) - Ram to Disk serialization. Java specific. Binary.
 
 ## Programming
 
