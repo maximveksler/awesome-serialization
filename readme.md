@@ -9,6 +9,7 @@
 - [Graph Serialization](#graph-serialization)
 - [Object serialization](#object-serialization)
 - [Programming](#programming)
+- [Academic](#academic)
 
 ## API Data Serialization
 
@@ -47,6 +48,12 @@ Serilization suitible for RPC networked services.
 ### Swift
 
 - [MessagePack.swift](https://github.com/a2/MessagePack.swift) - Swift MessagePack Serializer.
+
+## Academic
+
+Research papers discussing types, category theory, benchamrks and co.
+
+TODO
 
 ## Contribute
 
