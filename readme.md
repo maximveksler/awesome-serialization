@@ -62,7 +62,8 @@ Serialization formats for memory based data in transit (aka "live" objects).
 
 Research papers discussing types, category theory, benchamrks and co.
 
-TODO
+- [Type theory](https://en.wikipedia.org/wiki/Type_theory) - studies types, which informally are attributes that objects can possess.
+- [Category theory](https://en.wikipedia.org/wiki/Category_theory) - General theory of functions. Axiomatic foundation for mathematics, as an alternative to set theory.
 
 ## Contribute
 
