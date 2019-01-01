@@ -1,6 +1,6 @@
 # awesome-serialization [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> So many formats, so little bandwidth.
+> So many formats, so little bandwidth.  *See [wesm](https://github.com/18F/data-act-pilot/issues/161#issuecomment-139812420) comment before making up your mind.*
 
 ## Contents
 
