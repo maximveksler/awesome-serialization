@@ -26,6 +26,7 @@ Serialization suitible for API RPC networked services.
 - [XML](https://www.w3.org/XML/) - Extensible Markup Language. Genuinely Horrible. Textual.
 - [Plist](https://en.wikipedia.org/wiki/Property_list) - Property List representation. Apple. Textual.
 - [YAML](https://yaml.org) - Identation based data serialization standard. Textual.
+- [TOML](https://github.com/toml-lang/toml) - Tom's Obvious, Minimal Language. Textual.
 
 ## Big Data
 
