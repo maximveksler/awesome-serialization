@@ -35,9 +35,13 @@ Serialization suitble for big data at rest systems, from Hadoop family of soluti
 - [parquet](https://parquet.apache.org) - Columnar storage for Hadoop workloads. Binary.
 - [FlatBuffers](https://google.github.io/flatbuffers/) - Protocol Buffers suitible for larger datasets. Binary.
 - [orc](https://orc.apache.org) - Columnar storage for Hadoop workloads. Binary.
+
+## Machine Learning
+
+Serialization of deep learning networks and weights.
+
+- [GraphDef](https://www.tensorflow.org/guide/extend/model_files)
 - [HDF5®](https://www.hdfgroup.org) - n-dimensional datasets, complex objects, with schema for TensorFlow graphs. Binary.
-
-
 
 ## Graph
 
