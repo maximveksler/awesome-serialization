@@ -35,6 +35,7 @@ Serialization suitble for big data at rest systems, from Hadoop family of soluti
 - [parquet](https://parquet.apache.org) - Columnar storage for Hadoop workloads. Binary.
 - [FlatBuffers](https://google.github.io/flatbuffers/) - Protocol Buffers suitible for larger datasets. Binary.
 - [orc](https://orc.apache.org) - Columnar storage for Hadoop workloads. Binary.
+- [Ion](https://amzn.github.io/ion-docs/) - Row storage with skip scan parsing. Structed, schema embedded. Amazon. Textual/Binary.
 
 ## Machine Learning
 
