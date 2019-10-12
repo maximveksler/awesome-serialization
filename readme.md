@@ -6,6 +6,8 @@
 
 - [API](#api)
 - [Big Data](#big-data)
+- [Scientic](#scientic)
+- [Machine Learning](#machine-learning)
 - [Graph](#graph)
 - [Object](#object)
 - [Workflow](#workflow)
@@ -37,12 +39,19 @@ Serialization suitble for big data at rest systems, from Hadoop family of soluti
 - [orc](https://orc.apache.org) - Columnar storage for Hadoop workloads. Binary.
 - [Ion](https://amzn.github.io/ion-docs/) - Row storage with skip scan parsing. Structed, schema embedded. Amazon. Textual/Binary.
 
+## Scientic
+
+Large scale sparse arrays used in physical, mathematics and statistics research.
+
+- [HDF5®](https://www.hdfgroup.org) - n-dimensional datasets, complex objects, with schema. Efficient I/O. Binary.
+- [npy](https://numpy.org/devdocs/reference/generated/numpy.lib.format.html) - Numpy arrays, cell sparse metadata. Binary.
+
 ## Machine Learning
 
 Serialization of deep learning networks and weights.
 
-- [GraphDef](https://www.tensorflow.org/guide/extend/model_files)
-- [HDF5®](https://www.hdfgroup.org) - n-dimensional datasets, complex objects, with schema for TensorFlow graphs. Binary.
+- [SavedModel](https://www.tensorflow.org/guide/saved_model) - TensorFlow package, weights, graph, executable code. Binary.
+- [GraphDef](https://www.tensorflow.org/guide/extend/model_files) - TensorFlow graphs. Binary. Deprecated.
 
 ## Graph
 
