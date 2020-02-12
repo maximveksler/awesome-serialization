@@ -77,6 +77,7 @@ Serialization formats for memory based data in transit (aka "live" objects).
 ### Python
 
 - [msgpack-python](https://github.com/msgpack/msgpack-python) - MessagePack serializer implementation for Python.
+- [srsly](https://github.com/explosion/srsly) - Modern high-performance serialization utilities for Python.
 
 ### Swift
 
