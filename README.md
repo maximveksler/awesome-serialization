@@ -7,7 +7,7 @@
 - [API](#api)
 - [RPC](#rpc)
 - [Big Data](#big-data)
-- [Scientic](#scientic)
+- [Scientific](#scientific)
 - [Machine Learning](#machine-learning)
 - [Graph](#graph)
 - [Object](#object)
@@ -44,7 +44,7 @@ Serialization suitble for big data at rest systems, from Hadoop family of soluti
 - [orc](https://orc.apache.org) - Columnar storage for Hadoop workloads. Binary.
 - [Ion](https://amzn.github.io/ion-docs/) - Row storage with skip scan parsing. Structed, schema embedded. Amazon. Textual/Binary.
 
-## Scientic
+## Scientific
 
 Large scale sparse arrays used in physical, mathematics and statistics research.
 
