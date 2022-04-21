@@ -20,7 +20,8 @@
 Serialization suitible for API RPC networked services.
 
 - [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) - Comma Separated Values. Textual.
-- [JSON](https://www.json.org) - Lightweight data-interchange format. Textual.
+- [JSON](https://www.json.org) - Lightweight document data-interchange format. Textual.
+- [JSONL](https://jsonlines.org) - Schemeless "multiple JSON documents in 1 file" container data format. Textual.
 - [Avro](https://avro.apache.org) - Scheme embedded, dynamic rich data structures. Textual/Binary.
 - [Thrift](http://thrift.apache.org) - Scalable code generation, schema evolution binary format. Binary.
 - [protobuf](https://github.com/protocolbuffers/protobuf) - Google's data interchange format. Binary.
@@ -33,8 +34,8 @@ Serialization suitible for API RPC networked services.
 
 ## RPC
 
- - [gRPC](https://grpc.io/) - A high-performance, open source universal RPC framework. Binary, ISO Layer 7.
- - [RSocket](https://rsocket.io/) - Application protocol providing Reactive Streams semantics. Binary, ISO Layer 5 (or 6).
+ - [gRPC](https://grpc.io) - A high-performance, open source universal RPC framework. Binary, ISO Layer 7.
+ - [RSocket](https://rsocket.io) - Application protocol providing Reactive Streams semantics. Binary, ISO Layer 5 (or 6).
  
 ## Big Data
 
