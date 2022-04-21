@@ -33,7 +33,8 @@ Serialization suitible for API RPC networked services.
 
 ## RPC
 
- - [gRPC](https://grpc.io/) - A high-performance, open source universal RPC framework. Binary.
+ - [gRPC](https://grpc.io/) - A high-performance, open source universal RPC framework. Binary, ISO Layer 7.
+ - [RSocket](https://rsocket.io/) - Application protocol providing Reactive Streams semantics. Binary, ISO Layer 5 (or 6).
  
 ## Big Data
 
