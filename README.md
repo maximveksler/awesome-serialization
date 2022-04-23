@@ -22,10 +22,9 @@ Serialization suitible for API RPC networked services.
 - [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) - Comma Separated Values. Textual.
 - [JSON](https://www.json.org) - Lightweight document data-interchange format. Textual.
 - [JSONL](https://jsonlines.org) - Schemeless "multiple JSON documents in 1 file" container data format. Textual.
-- [Avro](https://avro.apache.org) - Scheme embedded, dynamic rich data structures. Textual/Binary.
 - [Thrift](http://thrift.apache.org) - Scalable code generation, schema evolution binary format. Binary.
-- [protobuf](https://github.com/protocolbuffers/protobuf) - Google's data interchange format. Binary.
-- [msgpack](https://msgpack.org) - Efficient JSON-like binary serialization format. Binary.
+- [Protocol Buffers](https://github.com/protocolbuffers/protobuf) - Google's data interchange format. Binary.
+- [Message Pack](https://msgpack.org) - Efficient JSON-like binary serialization format. Binary.
 - [bson](http://bsonspec.org) - Binary schemeless JSON encoding. Binary.
 - [XML](https://www.w3.org/XML/) - Extensible Markup Language. Genuinely Horrible. Textual.
 - [Plist](https://en.wikipedia.org/wiki/Property_list) - Property List representation. Apple. Textual.
@@ -41,9 +40,10 @@ Serialization suitible for API RPC networked services.
 
 Serialization suitble for big data at rest systems, from Hadoop family of solutions.
 
-- [parquet](https://parquet.apache.org) - Columnar storage for Hadoop workloads. Binary.
+- [Parquet](https://parquet.apache.org) - Columnar storage for Hadoop workloads. Binary.
 - [FlatBuffers](https://google.github.io/flatbuffers/) - Protocol Buffers suitible for larger datasets. Binary.
-- [orc](https://orc.apache.org) - Columnar storage for Hadoop workloads. Binary.
+- [ORC](https://orc.apache.org) - Columnar storage for Hadoop workloads. Binary.
+- [Avro](https://avro.apache.org) - Scheme embedded, dynamic rich data structures. Textual/Binary.
 - [Ion](https://amzn.github.io/ion-docs/) - Row storage with skip scan parsing. Structed, schema embedded. Amazon. Textual/Binary.
 
 ## Scientific
