@@ -73,6 +73,7 @@ Serialization formats for memory based data in transit (aka "live" objects).
 
 - [pickle](https://docs.python.org/3/library/pickle.html) - Ram to Disk serialization. Python specific. Binary.
 - [Java Object Serialization](https://docs.oracle.com/javase/8/docs/technotes/guides/serialization/index.html) - Ram to Disk serialization. Java specific. Binary.
+- [Dart Object Serialization](https://github.com/flutter/packages/tree/main/packages/standard_message_codec) - Ram to Disk serialization. Dart specific. Binary.
 
 ## Workflow
 
