@@ -67,29 +67,33 @@ Serialization formats for representing graph oriented data structures.
 - [json-ld](https://json-ld.org) - JSON for Linking Data. Textual.
 - [Turtle](https://www.w3.org/TR/turtle/) - Terse RDF Triple Language. Textual.
 
-## Object
-
-Serialization formats for memory based data in transit (aka "live" objects).
-
-- [pickle](https://docs.python.org/3/library/pickle.html) - Ram to Disk serialization. Python specific. Binary.
-- [Java Object Serialization](https://docs.oracle.com/javase/8/docs/technotes/guides/serialization/index.html) - Ram to Disk serialization. Java specific. Binary.
-- [Dart Object Serialization](https://github.com/flutter/packages/tree/main/packages/standard_message_codec) - Ram to Disk serialization. Dart specific. Binary.
-
 ## Workflow
 
 - [common-workflow-language](https://github.com/common-workflow-language) - Specification for describing analysis workflows and tools in a way that makes them portable and scalable across a variety of software and hardware environments.
 - [Relational Algebra and Datalog for Graphs](https://www.coursera.org/lecture/data-manipulation/relational-algebra-and-datalog-for-graphs-U8zVV) - Coursera course on graph data manipulation.
 
-## Programming
+## Language specific
+
+Language native serialization formats for in transit data (aka memory based "live" objects)
+
+### Dart
+
+- [Dart Object Serialization](https://github.com/flutter/packages/tree/main/packages/standard_message_codec) - Ram to Disk serialization. Dart specific. Binary.
 
 ### Python
 
+- [pickle](https://docs.python.org/3/library/pickle.html) - Ram to Disk serialization. Binary.
 - [msgpack-python](https://github.com/msgpack/msgpack-python) - MessagePack serializer implementation for Python.
 - [srsly](https://github.com/explosion/srsly) - Modern high-performance serialization utilities for Python.
 
 ### Swift
 
 - [MessagePack.swift](https://github.com/a2/MessagePack.swift) - Swift MessagePack Serializer.
+
+### Java
+
+- [Java Object Serialization](https://docs.oracle.com/javase/8/docs/technotes/guides/serialization/index.html) - Ram to Disk serialization. Binary.
+
 
 ## Academic
 
