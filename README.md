@@ -59,6 +59,8 @@ Serialization of deep learning networks and weights.
 
 - [SavedModel](https://www.tensorflow.org/guide/saved_model) - TensorFlow package, weights, graph, executable code. Binary.
 - [GraphDef](https://www.tensorflow.org/guide/extend/model_files) - TensorFlow graphs. Binary. Deprecated.
+- [ONNX](https://onnx.ai) - The open standard for machine learning interoperability
+- [safetensors](https://github.com/huggingface/safetensors) - Simple, safe way to store and distribute tensors
 
 ## Graph
 
