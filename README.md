@@ -1,6 +1,6 @@
 # awesome-serialization [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> So many formats, so little bandwidth.  *See [wesm](https://github.com/18F/data-act-pilot/issues/161#issuecomment-139812420) comment before making up your mind.*
+> So many formats, so much wow. *See [wesm](https://github.com/18F/data-act-pilot/issues/161#issuecomment-139812420) comment before making up your mind.*
 
 ## Contents
 
@@ -13,9 +13,11 @@
 - [Object](#object)
 - [Workflow](#workflow)
 - [Programming](#programming)
+- [Streaming](#streaming)
+- [Security-Focused](#security-focused)
 - [Academic](#academic)
 
-## API
+### **API**
 
 Serialization suitable for API RPC networked services.
 
@@ -31,13 +33,17 @@ Serialization suitable for API RPC networked services.
 - [YAML](https://yaml.org) - Indentation-based data serialization standard. Textual.
 - [TOML](https://github.com/toml-lang/toml) - Tom's Obvious, Minimal Language. Textual.
 - [CBOR](https://cbor.io) - Concise Binary Object Representation. Schema-free. Binary.
+- [JSON5](https://json5.org/) - JSON with added support for comments and relaxed syntax. Textual.
+- [ION](https://amzn.github.io/ion-docs/) - Amazon's advanced JSON-compatible serialization. Textual/Binary.
 
-## RPC
+### **RPC**
 
 - [gRPC](https://grpc.io) - A high-performance, open source universal RPC framework. Binary, ISO Layer 7.
 - [RSocket](https://rsocket.io) - Application protocol providing Reactive Streams semantics. Binary, ISO Layer 5 (or 6).
+- [Cap’n Proto](https://capnproto.org/) - High-performance, schema-based data interchange format. Binary.
+- [FlatBuffers](https://google.github.io/flatbuffers/) - Suitable for zero-copy deserialization. Binary.
 
-## Big Data
+### **Big Data**
 
 Serialization suitable for big data at rest systems, from Hadoop family of solutions.
 
@@ -47,16 +53,20 @@ Serialization suitable for big data at rest systems, from Hadoop family of solut
 - [Avro](https://avro.apache.org) - Scheme embedded, dynamic rich data structures. Textual/Binary.
 - [Ion](https://amzn.github.io/ion-docs/) - Row storage with skip scan parsing. Structured, schema embedded. Amazon. Textual/Binary.
 - [Arrow](https://arrow.apache.org) - Cross-language columnar data format optimized for analytics workloads. Binary.
+- [Delta Lake](https://delta.io/) - Transactional storage layer for big data workflows. Binary.
+- [Iceberg](https://iceberg.apache.org/) - Open table format for large datasets. Binary.
 
-## Scientific
+### **Scientific**
 
 Large-scale sparse arrays used in physical, mathematics, and statistics research.
 
 - [HDF5®](https://www.hdfgroup.org) - n-dimensional datasets, complex objects, with schema. Efficient I/O. Binary.
 - [npy](https://numpy.org/devdocs/reference/generated/numpy.lib.format.html) - Numpy arrays, cell sparse metadata. Binary.
 - [NetCDF](https://www.unidata.ucar.edu/software/netcdf/) - Self-describing, machine-independent data format for scientific data. Binary.
+- [Zarr](https://zarr.readthedocs.io/) - Scalable storage of n-dimensional arrays. Binary.
+- [ASDF](https://asdf-standard.readthedocs.io/) - Advanced Scientific Data Format for astronomy and beyond. Binary/Textual.
 
-## Machine Learning
+### **Machine Learning**
 
 Serialization of deep learning networks and weights.
 
@@ -64,12 +74,12 @@ Serialization of deep learning networks and weights.
 - [CoreML](https://developer.apple.com/documentation/coreml) - Apple's on-device ML model format. Binary.
 - [GraphDef](https://www.tensorflow.org/guide/extend/model_files) - TensorFlow graphs. Binary. Deprecated.
 - [ONNX](https://onnx.ai) - Open Neural Network Exchange. Interoperability focused. Binary.
-- [safetensors](https://github.com/huggingface/safetensors) - Simple, safe way to store and distribute tensors. Binary.
-<!--- Deprecated.
-- [PMML](https://dmg.org/pmml/v4-4/GeneralStructure.html) - Predictive Model Markup Language for exchanging ML models.
---->
+- [MLIR](https://mlir.llvm.org/) - Intermediate representation for machine learning computations. Textual/Binary.
+- [TorchScript](https://pytorch.org/docs/stable/jit.html) - Serialization for PyTorch models. Binary.
 
-## Graph
+#### Machine Learning - Deprecated
+- [PMML](https://dmg.org/pmml/v4-4/GeneralStructure.html) - Predictive Model Markup Language for exchanging ML models.
+### **Graph**
 
 Serialization formats for representing graph-oriented data structures.
 
@@ -77,59 +87,76 @@ Serialization formats for representing graph-oriented data structures.
 - [Turtle](https://www.w3.org/TR/turtle/) - Terse RDF Triple Language. Textual.
 - [GraphML](http://graphml.graphdrawing.org/) - XML-based graph serialization format. Textual.
 - [DOT](https://www.graphviz.org/doc/info/lang.html) - Graph description language, developed as a part of the Graphviz project. Textual.
-<!--- Deprecated.
-- [GraphML](http://graphml.graphdrawing.org/) - XML-based graph serialization format. Textual.
---->
-<!--- Deprecated.
-- [GML](https://en.wikipedia.org/wiki/Graph_Modelling_Language) - Graph Modeling Language. Hierarchical ASCII-based. Textual.
---->
+- [ParquetGraph](https://github.com/graphfoundry/parquet-graph) - Integration of Parquet with graph data structures. Binary.
+- [GraphSON](https://tinkerpop.apache.org/docs/current/dev/io/#graphson) - JSON-based graph serialization. Textual.
 
-## Workflow
+#### Graph - Deprecated
+- [GraphML](http://graphml.graphdrawing.org/) - XML-based graph serialization format. Textual.- [GML](https://en.wikipedia.org/wiki/Graph_Modelling_Language) - Graph Modeling Language. Hierarchical ASCII-based. Textual.
+### **Workflow**
 
 - [common-workflow-language](https://github.com/common-workflow-language) - Specification for describing analysis workflows and tools in a way that makes them portable and scalable across a variety of software and hardware environments.
 - [Apache Airflow DAGs](https://airflow.apache.org) - Python-based Directed Acyclic Graphs for workflows.
 - [WDL](https://openwdl.org/) - Workflow Description Language for genomics and scientific workflows.
 - [Relational Algebra and Datalog for Graphs](https://www.coursera.org/lecture/data-manipulation/relational-algebra-and-datalog-for-graphs-U8zVV) - Coursera course on graph data manipulation.
+- [Cromwell](https://cromwell.readthedocs.io/) - Scientific workflow management, compatible with WDL and CWL.
+- [Nextflow](https://www.nextflow.io/) - Scalable and reproducible scientific workflows.
 
-## Language specific
+### **Programming**
 
 Language-native serialization formats for in-transit data (aka memory-based "live" objects).
-### JavaScript
 
-- [BSON.js](https://github.com/mongodb/js-bson) - BSON serializer.
+#### **JavaScript**
 
-### Dart
+- [BSON.js](https://github.com/mongodb/js-bson) - BSON serializer. Binary.
+- [avsc](https://github.com/mtth/avsc) - JavaScript implementation of Apache Avro. Textual.
+
+#### **Dart**
 
 - [Dart Object Serialization](https://github.com/flutter/packages/tree/main/packages/standard_message_codec) - RAM to Disk serialization. Dart-specific. Binary.
 
-### Python
+#### **Python**
 
 - [pickle](https://docs.python.org/3/library/pickle.html) - RAM to Disk serialization. Binary.
 - [msgpack-python](https://github.com/msgpack/msgpack-python) - MessagePack serializer implementation for Python.
 - [srsly](https://github.com/explosion/srsly) - Modern high-performance serialization utilities for Python.
 
-### Swift
+#### **Swift**
 
 - [MessagePack.swift](https://github.com/a2/MessagePack.swift) - Swift MessagePack Serializer.
 
-### Java
+#### **Java**
 
 - [Java Object Serialization](https://docs.oracle.com/javase/8/docs/technotes/guides/serialization/index.html) - RAM to Disk serialization. Binary.
 
-### Rust
+#### **Rust**
 
 - [Serde](https://serde.rs/) - Rust's serialization framework for multiple formats like JSON, CBOR, and MessagePack.
+- [bincode](https://github.com/bincode-org/bincode) - High-performance binary serialization for Rust.
 
-### Go
+#### **Go**
 
 - [GOB](https://pkg.go.dev/encoding/gob) - Go's built-in serialization format for arbitrary data structures. Binary.
 
-## Academic
+### **Streaming**
+Serialization formats optimized for real-time streaming data.
+
+- [Kafka Streams](https://kafka.apache.org/documentation/streams/) - Real-time stream processing framework with built-in serialization.
+- [Protobuf-Lite](https://github.com/protocolbuffers/protobuf-javalite) - Lightweight Protocol Buffers for constrained environments.
+
+### **Security-Focused**
+Serialization formats designed with security and robustness in mind.
+
+- [safetensors](https://github.com/huggingface/safetensors) - Safe serialization of tensors for machine learning. Binary.
+- [Sealed Object Serialization](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/encrypt) - Encrypted serialization for web data. Textual/Binary.
+
+### **Academic**
 
 Research papers discussing types, category theory, benchmarks & co.
 
 - [Type theory](https://en.wikipedia.org/wiki/Type_theory) - Studies types, which informally are attributes that objects can possess.
 - [Category theory](https://en.wikipedia.org/wiki/Category_theory) - General theory of functions. Axiomatic foundation for mathematics, as an alternative to set theory.
+- [Graph Compression Techniques](https://arxiv.org/abs/2006.03684) - Research on optimizing graph serialization.
+- [Efficient Serialization in Distributed Systems](https://arxiv.org/abs/2201.02357) - Study of efficient serialization techniques for scalability.
 
 ## Contribute
 
