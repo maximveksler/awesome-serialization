@@ -17,7 +17,7 @@
 
 ## API
 
-Serialization suitible for API RPC networked services.
+Serialization suitable for API RPC networked services.
 
 - [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) - Comma Separated Values. Textual.
 - [JSON](https://www.json.org) - Lightweight document data-interchange format. Textual.
@@ -28,63 +28,83 @@ Serialization suitible for API RPC networked services.
 - [bson](http://bsonspec.org) - Binary schemeless JSON encoding. Binary.
 - [XML](https://www.w3.org/XML/) - Extensible Markup Language. Genuinely Horrible. Textual.
 - [Plist](https://en.wikipedia.org/wiki/Property_list) - Property List representation. Apple. Textual.
-- [YAML](https://yaml.org) - Identation based data serialization standard. Textual.
+- [YAML](https://yaml.org) - Indentation-based data serialization standard. Textual.
 - [TOML](https://github.com/toml-lang/toml) - Tom's Obvious, Minimal Language. Textual.
+- [CBOR](https://cbor.io) - Concise Binary Object Representation. Schema-free. Binary.
 
 ## RPC
 
- - [gRPC](https://grpc.io) - A high-performance, open source universal RPC framework. Binary, ISO Layer 7.
- - [RSocket](https://rsocket.io) - Application protocol providing Reactive Streams semantics. Binary, ISO Layer 5 (or 6).
- 
+- [gRPC](https://grpc.io) - A high-performance, open source universal RPC framework. Binary, ISO Layer 7.
+- [RSocket](https://rsocket.io) - Application protocol providing Reactive Streams semantics. Binary, ISO Layer 5 (or 6).
+
 ## Big Data
 
-Serialization suitble for big data at rest systems, from Hadoop family of solutions.
+Serialization suitable for big data at rest systems, from Hadoop family of solutions.
 
 - [Parquet](https://parquet.apache.org) - Columnar storage for Hadoop workloads. Binary.
-- [FlatBuffers](https://google.github.io/flatbuffers/) - Protocol Buffers suitible for larger datasets. Binary.
+- [FlatBuffers](https://google.github.io/flatbuffers/) - Protocol Buffers suitable for larger datasets. Binary.
 - [ORC](https://orc.apache.org) - Columnar storage for Hadoop workloads. Binary.
 - [Avro](https://avro.apache.org) - Scheme embedded, dynamic rich data structures. Textual/Binary.
-- [Ion](https://amzn.github.io/ion-docs/) - Row storage with skip scan parsing. Structed, schema embedded. Amazon. Textual/Binary.
+- [Ion](https://amzn.github.io/ion-docs/) - Row storage with skip scan parsing. Structured, schema embedded. Amazon. Textual/Binary.
+- [Arrow](https://arrow.apache.org) - Cross-language columnar data format optimized for analytics workloads. Binary.
 
 ## Scientific
 
-Large scale sparse arrays used in physical, mathematics and statistics research.
+Large-scale sparse arrays used in physical, mathematics, and statistics research.
 
 - [HDF5®](https://www.hdfgroup.org) - n-dimensional datasets, complex objects, with schema. Efficient I/O. Binary.
 - [npy](https://numpy.org/devdocs/reference/generated/numpy.lib.format.html) - Numpy arrays, cell sparse metadata. Binary.
+- [NetCDF](https://www.unidata.ucar.edu/software/netcdf/) - Self-describing, machine-independent data format for scientific data. Binary.
 
 ## Machine Learning
 
 Serialization of deep learning networks and weights.
 
 - [SavedModel](https://www.tensorflow.org/guide/saved_model) - TensorFlow package, weights, graph, executable code. Binary.
+- [CoreML](https://developer.apple.com/documentation/coreml) - Apple's on-device ML model format. Binary.
 - [GraphDef](https://www.tensorflow.org/guide/extend/model_files) - TensorFlow graphs. Binary. Deprecated.
-- [ONNX](https://onnx.ai) - The open standard for machine learning interoperability
-- [safetensors](https://github.com/huggingface/safetensors) - Simple, safe way to store and distribute tensors
+- [ONNX](https://onnx.ai) - Open Neural Network Exchange. Interoperability focused. Binary.
+- [safetensors](https://github.com/huggingface/safetensors) - Simple, safe way to store and distribute tensors. Binary.
+<!--- Deprecated.
+- [PMML](https://dmg.org/pmml/v4-4/GeneralStructure.html) - Predictive Model Markup Language for exchanging ML models.
+--->
 
 ## Graph
 
-Serialization formats for representing graph oriented data structures.
+Serialization formats for representing graph-oriented data structures.
 
 - [json-ld](https://json-ld.org) - JSON for Linking Data. Textual.
 - [Turtle](https://www.w3.org/TR/turtle/) - Terse RDF Triple Language. Textual.
+- [GraphML](http://graphml.graphdrawing.org/) - XML-based graph serialization format. Textual.
+- [DOT](https://www.graphviz.org/doc/info/lang.html) - Graph description language, developed as a part of the Graphviz project. Textual.
+<!--- Deprecated.
+- [GraphML](http://graphml.graphdrawing.org/) - XML-based graph serialization format. Textual.
+--->
+<!--- Deprecated.
+- [GML](https://en.wikipedia.org/wiki/Graph_Modelling_Language) - Graph Modeling Language. Hierarchical ASCII-based. Textual.
+--->
 
 ## Workflow
 
 - [common-workflow-language](https://github.com/common-workflow-language) - Specification for describing analysis workflows and tools in a way that makes them portable and scalable across a variety of software and hardware environments.
+- [Apache Airflow DAGs](https://airflow.apache.org) - Python-based Directed Acyclic Graphs for workflows.
+- [WDL](https://openwdl.org/) - Workflow Description Language for genomics and scientific workflows.
 - [Relational Algebra and Datalog for Graphs](https://www.coursera.org/lecture/data-manipulation/relational-algebra-and-datalog-for-graphs-U8zVV) - Coursera course on graph data manipulation.
 
 ## Language specific
 
-Language native serialization formats for in transit data (aka memory based "live" objects)
+Language-native serialization formats for in-transit data (aka memory-based "live" objects).
+### JavaScript
+
+- [BSON.js](https://github.com/mongodb/js-bson) - BSON serializer.
 
 ### Dart
 
-- [Dart Object Serialization](https://github.com/flutter/packages/tree/main/packages/standard_message_codec) - Ram to Disk serialization. Dart specific. Binary.
+- [Dart Object Serialization](https://github.com/flutter/packages/tree/main/packages/standard_message_codec) - RAM to Disk serialization. Dart-specific. Binary.
 
 ### Python
 
-- [pickle](https://docs.python.org/3/library/pickle.html) - Ram to Disk serialization. Binary.
+- [pickle](https://docs.python.org/3/library/pickle.html) - RAM to Disk serialization. Binary.
 - [msgpack-python](https://github.com/msgpack/msgpack-python) - MessagePack serializer implementation for Python.
 - [srsly](https://github.com/explosion/srsly) - Modern high-performance serialization utilities for Python.
 
@@ -94,14 +114,21 @@ Language native serialization formats for in transit data (aka memory based "liv
 
 ### Java
 
-- [Java Object Serialization](https://docs.oracle.com/javase/8/docs/technotes/guides/serialization/index.html) - Ram to Disk serialization. Binary.
+- [Java Object Serialization](https://docs.oracle.com/javase/8/docs/technotes/guides/serialization/index.html) - RAM to Disk serialization. Binary.
 
+### Rust
+
+- [Serde](https://serde.rs/) - Rust's serialization framework for multiple formats like JSON, CBOR, and MessagePack.
+
+### Go
+
+- [GOB](https://pkg.go.dev/encoding/gob) - Go's built-in serialization format for arbitrary data structures. Binary.
 
 ## Academic
 
-Research papers discussing types, category theory, benchamrks and co.
+Research papers discussing types, category theory, benchmarks & co.
 
-- [Type theory](https://en.wikipedia.org/wiki/Type_theory) - studies types, which informally are attributes that objects can possess.
+- [Type theory](https://en.wikipedia.org/wiki/Type_theory) - Studies types, which informally are attributes that objects can possess.
 - [Category theory](https://en.wikipedia.org/wiki/Category_theory) - General theory of functions. Axiomatic foundation for mathematics, as an alternative to set theory.
 
 ## Contribute
