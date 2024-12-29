@@ -24,6 +24,7 @@ Serialization suitable for API RPC networked services.
 - [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) - Comma Separated Values. Textual.
 - [JSON](https://www.json.org) - Lightweight document data-interchange format. Textual.
 - [JSONL](https://jsonlines.org) - Schemeless "multiple JSON documents in 1 file" container data format. Textual.
+- [JSON5](https://json5.org/) - JSON with added support for comments and relaxed syntax. Textual.
 - [Thrift](http://thrift.apache.org) - Scalable code generation, schema evolution binary format. Binary.
 - [Protocol Buffers](https://github.com/protocolbuffers/protobuf) - Google's data interchange format. Binary.
 - [Message Pack](https://msgpack.org) - Efficient JSON-like binary serialization format. Binary.
@@ -33,7 +34,6 @@ Serialization suitable for API RPC networked services.
 - [YAML](https://yaml.org) - Indentation-based data serialization standard. Textual.
 - [TOML](https://github.com/toml-lang/toml) - Tom's Obvious, Minimal Language. Textual.
 - [CBOR](https://cbor.io) - Concise Binary Object Representation. Schema-free. Binary.
-- [JSON5](https://json5.org/) - JSON with added support for comments and relaxed syntax. Textual.
 - [ION](https://amzn.github.io/ion-docs/) - Amazon's advanced JSON-compatible serialization. Textual/Binary.
 
 ### **RPC**
@@ -78,7 +78,9 @@ Serialization of deep learning networks and weights.
 - [TorchScript](https://pytorch.org/docs/stable/jit.html) - Serialization for PyTorch models. Binary.
 
 #### Machine Learning - Deprecated
+
 - [PMML](https://dmg.org/pmml/v4-4/GeneralStructure.html) - Predictive Model Markup Language for exchanging ML models.
+
 ### **Graph**
 
 Serialization formats for representing graph-oriented data structures.
@@ -91,7 +93,9 @@ Serialization formats for representing graph-oriented data structures.
 - [GraphSON](https://tinkerpop.apache.org/docs/current/dev/io/#graphson) - JSON-based graph serialization. Textual.
 
 #### Graph - Deprecated
+
 - [GraphML](http://graphml.graphdrawing.org/) - XML-based graph serialization format. Textual.- [GML](https://en.wikipedia.org/wiki/Graph_Modelling_Language) - Graph Modeling Language. Hierarchical ASCII-based. Textual.
+
 ### **Workflow**
 
 - [common-workflow-language](https://github.com/common-workflow-language) - Specification for describing analysis workflows and tools in a way that makes them portable and scalable across a variety of software and hardware environments.
@@ -138,12 +142,14 @@ Language-native serialization formats for in-transit data (aka memory-based "liv
 - [GOB](https://pkg.go.dev/encoding/gob) - Go's built-in serialization format for arbitrary data structures. Binary.
 
 ### **Streaming**
+
 Serialization formats optimized for real-time streaming data.
 
 - [Kafka Streams](https://kafka.apache.org/documentation/streams/) - Real-time stream processing framework with built-in serialization.
 - [Protobuf-Lite](https://github.com/protocolbuffers/protobuf-javalite) - Lightweight Protocol Buffers for constrained environments.
 
 ### **Security-Focused**
+
 Serialization formats designed with security and robustness in mind.
 
 - [safetensors](https://github.com/huggingface/safetensors) - Safe serialization of tensors for machine learning. Binary.
