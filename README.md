@@ -72,13 +72,14 @@ Serialization of deep learning networks and weights.
 
 - [SavedModel](https://www.tensorflow.org/guide/saved_model) - TensorFlow package, weights, graph, executable code. Binary.
 - [CoreML](https://developer.apple.com/documentation/coreml) - Apple's on-device ML model format. Binary.
-- [GraphDef](https://www.tensorflow.org/guide/extend/model_files) - TensorFlow graphs. Binary. Deprecated.
 - [ONNX](https://onnx.ai) - Open Neural Network Exchange. Interoperability focused. Binary.
 - [MLIR](https://mlir.llvm.org/) - Intermediate representation for machine learning computations. Textual/Binary.
 - [TorchScript](https://pytorch.org/docs/stable/jit.html) - Serialization for PyTorch models. Binary.
 
-#### Machine Learning - Deprecated
+<!-- trunk-ignore(markdownlint/MD001) -->
+###### Deprecated in Machine Learning
 
+- [GraphDef](https://www.tensorflow.org/guide/extend/model_files) - TensorFlow graphs. Binary.
 - [PMML](https://dmg.org/pmml/v4-4/GeneralStructure.html) - Predictive Model Markup Language for exchanging ML models.
 
 ### **Graph**
@@ -92,7 +93,8 @@ Serialization formats for representing graph-oriented data structures.
 - [ParquetGraph](https://github.com/graphfoundry/parquet-graph) - Integration of Parquet with graph data structures. Binary.
 - [GraphSON](https://tinkerpop.apache.org/docs/current/dev/io/#graphson) - JSON-based graph serialization. Textual.
 
-#### Graph - Deprecated
+<!-- trunk-ignore(markdownlint/MD001) -->
+###### Deprecated in Graph
 
 - [GraphML](http://graphml.graphdrawing.org/) - XML-based graph serialization format. Textual.- [GML](https://en.wikipedia.org/wiki/Graph_Modelling_Language) - Graph Modeling Language. Hierarchical ASCII-based. Textual.
 
