@@ -174,12 +174,6 @@ Serialization formats designed for application and infrastructure configuration.
 - [Pkl](https://pkl-lang.org/) - Programmable, typed configuration language. Apple. Textual.
 - [KCL](https://kcl-lang.io/) - Kusion Configuration Language for cloud-native config and policy. Textual.
 
-### **Configuration**
-
-Serialization formats designed for application and infrastructure configuration.
-
-- [CUE](https://cuelang.org/) - Constraint-based configuration language with validation, templating, and JSON superset. Google. Textual.
-
 ### **Academic**
 
 Research papers discussing types, category theory, benchmarks & co.
