@@ -16,10 +16,6 @@
 - [Graph](#graph)
 - [Workflow](#workflow)
 - [Programming](#programming)
-- [Streaming](#streaming)
-- [Security-Focused](#security-focused)
-- [Configuration](#configuration)
-- [Agentic](#agentic)
 - [Academic](#academic)
 
 ### **API**
@@ -157,7 +153,7 @@ Serialization formats for representing graph-oriented data structures.
 <!-- trunk-ignore(markdownlint/MD001) -->
 ###### Deprecated in Graph
 
-- [GraphML](http://graphml.graphdrawing.org/) - XML-based graph serialization format. Textual.- [GML](https://en.wikipedia.org/wiki/Graph_Modelling_Language) - Graph Modeling Language. Hierarchical ASCII-based. Textual.
+- [GML](https://en.wikipedia.org/wiki/Graph_Modelling_Language) - Graph Modeling Language. Hierarchical ASCII-based. Textual.
 
 ### **Workflow**
 
@@ -203,56 +199,6 @@ Language-native serialization formats for in-transit data (aka memory-based "liv
 #### **Go**
 
 - [GOB](https://pkg.go.dev/encoding/gob) - Go's built-in serialization format for arbitrary data structures. Binary.
-
-### **Streaming**
-
-Serialization formats optimized for real-time streaming data.
-
-- [Protobuf-Lite](https://github.com/protocolbuffers/protobuf-javalite) - Lightweight Protocol Buffers for constrained environments.
-- [CloudEvents](https://cloudevents.io/) - CNCF specification for describing event data in a common way. Textual/Binary.
-- [AsyncAPI](https://www.asyncapi.com/) - OpenAPI equivalent for event-driven and message-driven architectures. Textual.
-
-### **Security-Focused**
-
-Serialization formats designed with security and robustness in mind.
-
-- [safetensors](https://github.com/huggingface/safetensors) - Safe serialization of tensors for machine learning. Binary.
-- [Sealed Object Serialization](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/encrypt) - Encrypted serialization for web data. Textual/Binary.
-- [PASETO](https://paseto.io/) - Platform-Agnostic Security Tokens. Secure alternative to JWT. Textual.
-- [COSE](https://datatracker.ietf.org/doc/html/rfc8152) - CBOR Object Signing and Encryption. Used in WebAuthn/FIDO2. Binary.
-
-### **Configuration**
-
-Serialization formats designed for application and infrastructure configuration.
-
-- [CUE](https://cuelang.org/) - Constraint-based configuration language with validation, templating, and JSON superset. Google. Textual.
-- [Pkl](https://pkl-lang.org/) - Programmable, typed configuration language. Apple. Textual.
-- [KCL](https://kcl-lang.io/) - Kusion Configuration Language for cloud-native config and policy. Textual.
-
-### **Agentic**
-
-Serialization formats and protocols designed for LLM agents, tool calling, token efficiency, and agent-to-agent communication.
-
-#### Token-Efficient Formats
-
-Formats optimized to minimize token consumption when passing structured data to LLMs.
-
-- [TOON](https://github.com/toon-format/toon) - Token-Oriented Object Notation. Compact, schema-aware JSON alternative achieving 30–60% token savings for LLM prompts. Textual.
-- [Markdown](https://daringfireball.net/projects/markdown/) - Lightweight markup widely used as the native "language" of LLM input/output. Highly token-efficient vs HTML/XML. Textual.
-- [YAML](https://yaml.org) - Indentation-based format often more token-efficient than JSON for LLM contexts due to lack of braces/quotes. Textual.
-
-#### Agent Protocols
-
-Communication protocols enabling tool use and inter-agent collaboration.
-
-- [MCP](https://modelcontextprotocol.io/) - Model Context Protocol. Anthropic's open standard for connecting LLM agents to tools and data sources. JSON-RPC based. Textual.
-- [A2A](https://github.com/a2aproject/A2A) - Agent2Agent Protocol. Google's open protocol for agent-to-agent communication and interoperability. JSON based. Textual.
-
-#### Structured Output
-
-Formats and schemas for constraining and validating LLM-generated structured data.
-
-- [BAML](https://github.com/BoundaryML/baml) - Boundary AI Markup Language. Domain-specific language for defining LLM function signatures with type-safe structured output. Textual.
 
 ### **Academic**
 
