@@ -36,6 +36,7 @@ Serialization suitable for API RPC networked services.
 - [TOML](https://github.com/toml-lang/toml) - Tom's Obvious, Minimal Language. Textual.
 - [CBOR](https://cbor.io) - Concise Binary Object Representation. Schema-free. Binary.
 - [ION](https://amzn.github.io/ion-docs/) - Amazon's advanced JSON-compatible serialization. Textual/Binary.
+- [Smile](https://github.com/FasterXML/smile-format-specification) - Binary JSON format from FasterXML/Jackson. Used in Elasticsearch. Binary.
 
 ### **RPC**
 
@@ -43,6 +44,7 @@ Serialization suitable for API RPC networked services.
 - [RSocket](https://rsocket.io) - Application protocol providing Reactive Streams semantics. Binary, ISO Layer 5 (or 6).
 - [Cap’n Proto](https://capnproto.org/) - High-performance, schema-based data interchange format. Binary.
 - [FlatBuffers](https://google.github.io/flatbuffers/) - Suitable for zero-copy deserialization. Binary.
+- [Connect](https://connectrpc.com/) - Modern RPC framework compatible with gRPC, with HTTP/1.1, JSON, and browser support. Binary/Textual.
 
 ### **Big Data**
 
@@ -78,6 +80,7 @@ Serialization of deep learning networks and weights.
 - [MLIR](https://mlir.llvm.org/) - Intermediate representation for machine learning computations. Textual/Binary.
 - [TorchScript](https://pytorch.org/docs/stable/jit.html) - Serialization for PyTorch models. Binary.
 - [GGUF](https://github.com/ggerganov/ggml/blob/master/docs/gguf.md) - Quantized model format for llama.cpp/ggml. The de facto standard for local LLM inference. Binary.
+- [MLX format](https://ml-explore.github.io/mlx/) - Apple's ML framework format, safetensors-based. Optimized for Apple Silicon. Binary.
 
 <!-- trunk-ignore(markdownlint/MD001) -->
 ###### Deprecated in Machine Learning
@@ -150,8 +153,9 @@ Language-native serialization formats for in-transit data (aka memory-based "liv
 
 Serialization formats optimized for real-time streaming data.
 
-- [Kafka Streams](https://kafka.apache.org/documentation/streams/) - Real-time stream processing framework with built-in serialization.
 - [Protobuf-Lite](https://github.com/protocolbuffers/protobuf-javalite) - Lightweight Protocol Buffers for constrained environments.
+- [CloudEvents](https://cloudevents.io/) - CNCF specification for describing event data in a common way. Textual/Binary.
+- [AsyncAPI](https://www.asyncapi.com/) - OpenAPI equivalent for event-driven and message-driven architectures. Textual.
 
 ### **Security-Focused**
 
@@ -159,6 +163,16 @@ Serialization formats designed with security and robustness in mind.
 
 - [safetensors](https://github.com/huggingface/safetensors) - Safe serialization of tensors for machine learning. Binary.
 - [Sealed Object Serialization](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/encrypt) - Encrypted serialization for web data. Textual/Binary.
+- [PASETO](https://paseto.io/) - Platform-Agnostic Security Tokens. Secure alternative to JWT. Textual.
+- [COSE](https://datatracker.ietf.org/doc/html/rfc8152) - CBOR Object Signing and Encryption. Used in WebAuthn/FIDO2. Binary.
+
+### **Configuration**
+
+Serialization formats designed for application and infrastructure configuration.
+
+- [CUE](https://cuelang.org/) - Constraint-based configuration language with validation, templating, and JSON superset. Google. Textual.
+- [Pkl](https://pkl-lang.org/) - Programmable, typed configuration language. Apple. Textual.
+- [KCL](https://kcl-lang.io/) - Kusion Configuration Language for cloud-native config and policy. Textual.
 
 ### **Configuration**
 
