@@ -8,8 +8,6 @@
 - [Agentic](#agentic)
 - [Machine Learning](#machine-learning)
 - [Big Data](#big-data)
-- [RPC](#rpc)
-- [Streaming](#streaming)
 - [Configuration](#configuration)
 - [Security-Focused](#security-focused)
 - [Scientific](#scientific)
@@ -20,7 +18,7 @@
 
 ### **API**
 
-Serialization suitable for API RPC networked services.
+Serialization formats for APIs, networked services, remote procedure calls, and streaming.
 
 - [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) - Comma Separated Values. Textual.
 - [JSON](https://www.json.org) - Lightweight document data-interchange format. Textual.
@@ -38,6 +36,24 @@ Serialization suitable for API RPC networked services.
 - [ION](https://amzn.github.io/ion-docs/) - Amazon's advanced JSON-compatible serialization. Textual/Binary.
 - [Smile](https://github.com/FasterXML/smile-format-specification) - Binary JSON format from FasterXML/Jackson. Used in Elasticsearch. Binary.
 - [JSON Schema](https://json-schema.org/) - Schema vocabulary for annotating and validating JSON documents. Textual.
+
+#### RPC
+
+High-performance remote procedure call frameworks and formats.
+
+- [gRPC](https://grpc.io) - A high-performance, open source universal RPC framework. Binary, ISO Layer 7.
+- [RSocket](https://rsocket.io) - Application protocol providing Reactive Streams semantics. Binary, ISO Layer 5 (or 6).
+- [Cap'n Proto](https://capnproto.org/) - High-performance, schema-based data interchange format. Binary.
+- [FlatBuffers](https://google.github.io/flatbuffers/) - Suitable for zero-copy deserialization. Binary.
+- [Connect](https://connectrpc.com/) - Modern RPC framework compatible with gRPC, with HTTP/1.1, JSON, and browser support. Binary/Textual.
+
+#### Streaming
+
+Serialization formats optimized for real-time streaming data.
+
+- [Protobuf-Lite](https://github.com/protocolbuffers/protobuf-javalite) - Lightweight Protocol Buffers for constrained environments.
+- [CloudEvents](https://cloudevents.io/) - CNCF specification for describing event data in a common way. Textual/Binary.
+- [AsyncAPI](https://www.asyncapi.com/) - OpenAPI equivalent for event-driven and message-driven architectures. Textual.
 
 ### **Agentic**
 
@@ -95,22 +111,6 @@ Serialization suitable for big data at rest systems, from Hadoop family of solut
 - [Delta Lake](https://delta.io/) - Transactional storage layer for big data workflows. Binary.
 - [Iceberg](https://iceberg.apache.org/) - Open table format for large datasets. Binary.
 - [Lance](https://lancedb.github.io/lance/) - Modern columnar format optimized for ML and vector search workloads. Binary.
-
-### **RPC**
-
-- [gRPC](https://grpc.io) - A high-performance, open source universal RPC framework. Binary, ISO Layer 7.
-- [RSocket](https://rsocket.io) - Application protocol providing Reactive Streams semantics. Binary, ISO Layer 5 (or 6).
-- [Cap'n Proto](https://capnproto.org/) - High-performance, schema-based data interchange format. Binary.
-- [FlatBuffers](https://google.github.io/flatbuffers/) - Suitable for zero-copy deserialization. Binary.
-- [Connect](https://connectrpc.com/) - Modern RPC framework compatible with gRPC, with HTTP/1.1, JSON, and browser support. Binary/Textual.
-
-### **Streaming**
-
-Serialization formats optimized for real-time streaming data.
-
-- [Protobuf-Lite](https://github.com/protocolbuffers/protobuf-javalite) - Lightweight Protocol Buffers for constrained environments.
-- [CloudEvents](https://cloudevents.io/) - CNCF specification for describing event data in a common way. Textual/Binary.
-- [AsyncAPI](https://www.asyncapi.com/) - OpenAPI equivalent for event-driven and message-driven architectures. Textual.
 
 ### **Configuration**
 
