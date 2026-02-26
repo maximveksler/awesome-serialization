@@ -5,12 +5,15 @@
 ## Contents
 
 - [API](#api)
-- [RPC](#rpc)
-- [Big Data](#big-data)
-- [Scientific](#scientific)
+- [Agentic](#agentic)
 - [Machine Learning](#machine-learning)
+- [Big Data](#big-data)
+- [RPC](#rpc)
+- [Streaming](#streaming)
+- [Configuration](#configuration)
+- [Security-Focused](#security-focused)
+- [Scientific](#scientific)
 - [Graph](#graph)
-- [Object](#object)
 - [Workflow](#workflow)
 - [Programming](#programming)
 - [Streaming](#streaming)
@@ -40,37 +43,30 @@ Serialization suitable for API RPC networked services.
 - [Smile](https://github.com/FasterXML/smile-format-specification) - Binary JSON format from FasterXML/Jackson. Used in Elasticsearch. Binary.
 - [JSON Schema](https://json-schema.org/) - Schema vocabulary for annotating and validating JSON documents. Textual.
 
-### **RPC**
+### **Agentic**
 
-- [gRPC](https://grpc.io) - A high-performance, open source universal RPC framework. Binary, ISO Layer 7.
-- [RSocket](https://rsocket.io) - Application protocol providing Reactive Streams semantics. Binary, ISO Layer 5 (or 6).
-- [Cap’n Proto](https://capnproto.org/) - High-performance, schema-based data interchange format. Binary.
-- [FlatBuffers](https://google.github.io/flatbuffers/) - Suitable for zero-copy deserialization. Binary.
-- [Connect](https://connectrpc.com/) - Modern RPC framework compatible with gRPC, with HTTP/1.1, JSON, and browser support. Binary/Textual.
+Serialization formats and protocols designed for LLM agents, tool calling, token efficiency, and agent-to-agent communication.
 
-### **Big Data**
+#### Token-Efficient Formats
 
-Serialization suitable for big data at rest systems, from Hadoop family of solutions.
+Formats optimized to minimize token consumption when passing structured data to LLMs.
 
-- [Parquet](https://parquet.apache.org) - Columnar storage for Hadoop workloads. Binary.
-- [FlatBuffers](https://google.github.io/flatbuffers/) - Protocol Buffers suitable for larger datasets. Binary.
-- [ORC](https://orc.apache.org) - Columnar storage for Hadoop workloads. Binary.
-- [Avro](https://avro.apache.org) - Scheme embedded, dynamic rich data structures. Textual/Binary.
-- [Ion](https://amzn.github.io/ion-docs/) - Row storage with skip scan parsing. Structured, schema embedded. Amazon. Textual/Binary.
-- [Arrow](https://arrow.apache.org) - Cross-language columnar data format optimized for analytics workloads. Binary.
-- [Delta Lake](https://delta.io/) - Transactional storage layer for big data workflows. Binary.
-- [Iceberg](https://iceberg.apache.org/) - Open table format for large datasets. Binary.
-- [Lance](https://lancedb.github.io/lance/) - Modern columnar format optimized for ML and vector search workloads. Binary.
+- [TOON](https://github.com/toon-format/toon) - Token-Oriented Object Notation. Compact, schema-aware JSON alternative achieving 30–60% token savings for LLM prompts. Textual.
+- [Markdown](https://daringfireball.net/projects/markdown/) - Lightweight markup widely used as the native "language" of LLM input/output. Highly token-efficient vs HTML/XML. Textual.
+- [YAML](https://yaml.org) - Indentation-based format often more token-efficient than JSON for LLM contexts due to lack of braces/quotes. Textual.
 
-### **Scientific**
+#### Agent Protocols
 
-Large-scale sparse arrays used in physical, mathematics, and statistics research.
+Communication protocols enabling tool use and inter-agent collaboration.
 
-- [HDF5®](https://www.hdfgroup.org) - n-dimensional datasets, complex objects, with schema. Efficient I/O. Binary.
-- [npy](https://numpy.org/devdocs/reference/generated/numpy.lib.format.html) - Numpy arrays, cell sparse metadata. Binary.
-- [NetCDF](https://www.unidata.ucar.edu/software/netcdf/) - Self-describing, machine-independent data format for scientific data. Binary.
-- [Zarr](https://zarr.readthedocs.io/) - Scalable storage of n-dimensional arrays. Binary.
-- [ASDF](https://asdf-standard.readthedocs.io/) - Advanced Scientific Data Format for astronomy and beyond. Binary/Textual.
+- [MCP](https://modelcontextprotocol.io/) - Model Context Protocol. Anthropic's open standard for connecting LLM agents to tools and data sources. JSON-RPC based. Textual.
+- [A2A](https://github.com/a2aproject/A2A) - Agent2Agent Protocol. Google's open protocol for agent-to-agent communication and interoperability. JSON based. Textual.
+
+#### Structured Output
+
+Formats and schemas for constraining and validating LLM-generated structured data.
+
+- [BAML](https://github.com/BoundaryML/baml) - Boundary AI Markup Language. Domain-specific language for defining LLM function signatures with type-safe structured output. Textual.
 
 ### **Machine Learning**
 
@@ -89,6 +85,63 @@ Serialization of deep learning networks and weights.
 
 - [GraphDef](https://www.tensorflow.org/guide/extend/model_files) - TensorFlow graphs. Binary.
 - [PMML](https://dmg.org/pmml/v4-4/GeneralStructure.html) - Predictive Model Markup Language for exchanging ML models.
+
+### **Big Data**
+
+Serialization suitable for big data at rest systems, from Hadoop family of solutions.
+
+- [Parquet](https://parquet.apache.org) - Columnar storage for Hadoop workloads. Binary.
+- [FlatBuffers](https://google.github.io/flatbuffers/) - Protocol Buffers suitable for larger datasets. Binary.
+- [ORC](https://orc.apache.org) - Columnar storage for Hadoop workloads. Binary.
+- [Avro](https://avro.apache.org) - Scheme embedded, dynamic rich data structures. Textual/Binary.
+- [Ion](https://amzn.github.io/ion-docs/) - Row storage with skip scan parsing. Structured, schema embedded. Amazon. Textual/Binary.
+- [Arrow](https://arrow.apache.org) - Cross-language columnar data format optimized for analytics workloads. Binary.
+- [Delta Lake](https://delta.io/) - Transactional storage layer for big data workflows. Binary.
+- [Iceberg](https://iceberg.apache.org/) - Open table format for large datasets. Binary.
+- [Lance](https://lancedb.github.io/lance/) - Modern columnar format optimized for ML and vector search workloads. Binary.
+
+### **RPC**
+
+- [gRPC](https://grpc.io) - A high-performance, open source universal RPC framework. Binary, ISO Layer 7.
+- [RSocket](https://rsocket.io) - Application protocol providing Reactive Streams semantics. Binary, ISO Layer 5 (or 6).
+- [Cap'n Proto](https://capnproto.org/) - High-performance, schema-based data interchange format. Binary.
+- [FlatBuffers](https://google.github.io/flatbuffers/) - Suitable for zero-copy deserialization. Binary.
+- [Connect](https://connectrpc.com/) - Modern RPC framework compatible with gRPC, with HTTP/1.1, JSON, and browser support. Binary/Textual.
+
+### **Streaming**
+
+Serialization formats optimized for real-time streaming data.
+
+- [Protobuf-Lite](https://github.com/protocolbuffers/protobuf-javalite) - Lightweight Protocol Buffers for constrained environments.
+- [CloudEvents](https://cloudevents.io/) - CNCF specification for describing event data in a common way. Textual/Binary.
+- [AsyncAPI](https://www.asyncapi.com/) - OpenAPI equivalent for event-driven and message-driven architectures. Textual.
+
+### **Configuration**
+
+Serialization formats designed for application and infrastructure configuration.
+
+- [CUE](https://cuelang.org/) - Constraint-based configuration language with validation, templating, and JSON superset. Google. Textual.
+- [Pkl](https://pkl-lang.org/) - Programmable, typed configuration language. Apple. Textual.
+- [KCL](https://kcl-lang.io/) - Kusion Configuration Language for cloud-native config and policy. Textual.
+
+### **Security-Focused**
+
+Serialization formats designed with security and robustness in mind.
+
+- [safetensors](https://github.com/huggingface/safetensors) - Safe serialization of tensors for machine learning. Binary.
+- [Sealed Object Serialization](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/encrypt) - Encrypted serialization for web data. Textual/Binary.
+- [PASETO](https://paseto.io/) - Platform-Agnostic Security Tokens. Secure alternative to JWT. Textual.
+- [COSE](https://datatracker.ietf.org/doc/html/rfc8152) - CBOR Object Signing and Encryption. Used in WebAuthn/FIDO2. Binary.
+
+### **Scientific**
+
+Large-scale sparse arrays used in physical, mathematics, and statistics research.
+
+- [HDF5®](https://www.hdfgroup.org) - n-dimensional datasets, complex objects, with schema. Efficient I/O. Binary.
+- [npy](https://numpy.org/devdocs/reference/generated/numpy.lib.format.html) - Numpy arrays, cell sparse metadata. Binary.
+- [NetCDF](https://www.unidata.ucar.edu/software/netcdf/) - Self-describing, machine-independent data format for scientific data. Binary.
+- [Zarr](https://zarr.readthedocs.io/) - Scalable storage of n-dimensional arrays. Binary.
+- [ASDF](https://asdf-standard.readthedocs.io/) - Advanced Scientific Data Format for astronomy and beyond. Binary/Textual.
 
 ### **Graph**
 
