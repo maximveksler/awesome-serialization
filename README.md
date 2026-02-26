@@ -16,6 +16,7 @@
 - [Streaming](#streaming)
 - [Security-Focused](#security-focused)
 - [Configuration](#configuration)
+- [Agentic](#agentic)
 - [Academic](#academic)
 
 ### **API**
@@ -37,6 +38,7 @@ Serialization suitable for API RPC networked services.
 - [CBOR](https://cbor.io) - Concise Binary Object Representation. Schema-free. Binary.
 - [ION](https://amzn.github.io/ion-docs/) - Amazon's advanced JSON-compatible serialization. Textual/Binary.
 - [Smile](https://github.com/FasterXML/smile-format-specification) - Binary JSON format from FasterXML/Jackson. Used in Elasticsearch. Binary.
+- [JSON Schema](https://json-schema.org/) - Schema vocabulary for annotating and validating JSON documents. Textual.
 
 ### **RPC**
 
@@ -173,6 +175,31 @@ Serialization formats designed for application and infrastructure configuration.
 - [CUE](https://cuelang.org/) - Constraint-based configuration language with validation, templating, and JSON superset. Google. Textual.
 - [Pkl](https://pkl-lang.org/) - Programmable, typed configuration language. Apple. Textual.
 - [KCL](https://kcl-lang.io/) - Kusion Configuration Language for cloud-native config and policy. Textual.
+
+### **Agentic**
+
+Serialization formats and protocols designed for LLM agents, tool calling, token efficiency, and agent-to-agent communication.
+
+#### Token-Efficient Formats
+
+Formats optimized to minimize token consumption when passing structured data to LLMs.
+
+- [TOON](https://github.com/toon-format/toon) - Token-Oriented Object Notation. Compact, schema-aware JSON alternative achieving 30–60% token savings for LLM prompts. Textual.
+- [Markdown](https://daringfireball.net/projects/markdown/) - Lightweight markup widely used as the native "language" of LLM input/output. Highly token-efficient vs HTML/XML. Textual.
+- [YAML](https://yaml.org) - Indentation-based format often more token-efficient than JSON for LLM contexts due to lack of braces/quotes. Textual.
+
+#### Agent Protocols
+
+Communication protocols enabling tool use and inter-agent collaboration.
+
+- [MCP](https://modelcontextprotocol.io/) - Model Context Protocol. Anthropic's open standard for connecting LLM agents to tools and data sources. JSON-RPC based. Textual.
+- [A2A](https://github.com/a2aproject/A2A) - Agent2Agent Protocol. Google's open protocol for agent-to-agent communication and interoperability. JSON based. Textual.
+
+#### Structured Output
+
+Formats and schemas for constraining and validating LLM-generated structured data.
+
+- [BAML](https://github.com/BoundaryML/baml) - Boundary AI Markup Language. Domain-specific language for defining LLM function signatures with type-safe structured output. Textual.
 
 ### **Academic**
 
