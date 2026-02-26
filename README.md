@@ -15,6 +15,7 @@
 - [Programming](#programming)
 - [Streaming](#streaming)
 - [Security-Focused](#security-focused)
+- [Configuration](#configuration)
 - [Academic](#academic)
 
 ### **API**
@@ -55,6 +56,7 @@ Serialization suitable for big data at rest systems, from Hadoop family of solut
 - [Arrow](https://arrow.apache.org) - Cross-language columnar data format optimized for analytics workloads. Binary.
 - [Delta Lake](https://delta.io/) - Transactional storage layer for big data workflows. Binary.
 - [Iceberg](https://iceberg.apache.org/) - Open table format for large datasets. Binary.
+- [Lance](https://lancedb.github.io/lance/) - Modern columnar format optimized for ML and vector search workloads. Binary.
 
 ### **Scientific**
 
@@ -75,6 +77,7 @@ Serialization of deep learning networks and weights.
 - [ONNX](https://onnx.ai) - Open Neural Network Exchange. Interoperability focused. Binary.
 - [MLIR](https://mlir.llvm.org/) - Intermediate representation for machine learning computations. Textual/Binary.
 - [TorchScript](https://pytorch.org/docs/stable/jit.html) - Serialization for PyTorch models. Binary.
+- [GGUF](https://github.com/ggerganov/ggml/blob/master/docs/gguf.md) - Quantized model format for llama.cpp/ggml. The de facto standard for local LLM inference. Binary.
 
 <!-- trunk-ignore(markdownlint/MD001) -->
 ###### Deprecated in Machine Learning
@@ -156,6 +159,12 @@ Serialization formats designed with security and robustness in mind.
 
 - [safetensors](https://github.com/huggingface/safetensors) - Safe serialization of tensors for machine learning. Binary.
 - [Sealed Object Serialization](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/encrypt) - Encrypted serialization for web data. Textual/Binary.
+
+### **Configuration**
+
+Serialization formats designed for application and infrastructure configuration.
+
+- [CUE](https://cuelang.org/) - Constraint-based configuration language with validation, templating, and JSON superset. Google. Textual.
 
 ### **Academic**
 
