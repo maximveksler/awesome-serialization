@@ -63,6 +63,7 @@ Serialization formats and protocols designed for LLM agents, tool calling, token
 
 Formats optimized to minimize token consumption when passing structured data to LLMs.
 
+- [GCF](https://github.com/blackwell-systems/gcf) - Graph Compact Format. Universal pivot for structured data achieving 61–71% token savings across JSON, YAML, TOML, CSV, and MessagePack. 100% LLM comprehension on every frontier model (1,700+ evaluations). 33 billion+ lossless round-trips verified. Native graph syntax, session deduplication. Six implementations. Textual.
 - [TOON](https://github.com/toon-format/toon) - Token-Oriented Object Notation. Compact, schema-aware JSON alternative achieving 30–60% token savings for LLM prompts. Textual.
 - [Markdown](https://daringfireball.net/projects/markdown/) - Lightweight markup widely used as the native "language" of LLM input/output. Highly token-efficient vs HTML/XML. Textual.
 - [YAML](https://yaml.org) - Indentation-based format often more token-efficient than JSON for LLM contexts due to lack of braces/quotes. Textual.
