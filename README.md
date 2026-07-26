@@ -208,6 +208,7 @@ Research papers discussing types, category theory, benchmarks & co.
 - [Category theory](https://en.wikipedia.org/wiki/Category_theory) - General theory of functions. Axiomatic foundation for mathematics, as an alternative to set theory.
 - [Graph Compression Techniques](https://arxiv.org/abs/2006.03684) - Research on optimizing graph serialization.
 - [Efficient Serialization in Distributed Systems](https://arxiv.org/abs/2201.02357) - Study of efficient serialization techniques for scalability.
+- [StructEval](https://github.com/TIGER-AI-Lab/StructEval) - Benchmark for evaluating LLM-generated structured outputs across 18 formats.
 
 ## Contribute
 
