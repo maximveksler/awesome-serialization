@@ -36,6 +36,7 @@ Serialization formats for APIs, networked services, remote procedure calls, and 
 - [ION](https://amzn.github.io/ion-docs/) - Amazon's advanced JSON-compatible serialization. Textual/Binary.
 - [Smile](https://github.com/FasterXML/smile-format-specification) - Binary JSON format from FasterXML/Jackson. Used in Elasticsearch. Binary.
 - [JSON Schema](https://json-schema.org/) - Schema vocabulary for annotating and validating JSON documents. Textual.
+- [Kiln](https://github.com/leo-gan/gld-kiln/spec/) - A frozen, positional, little-endian wire format implemented from scratch in 11 languages. Binary.
 
 #### RPC
 
